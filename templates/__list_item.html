@@ -1,0 +1,14 @@
+{% for f in files %}
+    {% if f.isdir %}
+        <li>
+            <strong>{{ f.name }}</strong>
+            <ul>
+                {% with files=f.files %}
+                {% include '__list_item.html'  %}
+                {% endwith %}
+            </ul>
+        </li>
+    {% else %}
+        <li><a href="{{ f.path }}{% if is_export %}.html{% endif %}">{{ f.name }}</a></li>
+    {% endif %}
+{% endfor %}

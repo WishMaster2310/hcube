@@ -1,0 +1,33 @@
+<section class="map-section" id="contacts">
+	<div class="map" id="map"></div>
+	<div class="container map-content">
+		<div class="map-content-links">
+		{% for item in base.contacts %}
+			<a href="#" data-center="[{{ item.lat }}, {{ item.lon }}]" data-email="{{ item.email }}" data-addr="{{ item.addr }}" data-tel="{{ item.tel }}" class="j-map-marker"><span>{{ item.name }}</span></a>
+		{% endfor %}
+		</div>
+
+		<div class="map-row">
+			<div class="map-col">
+				<div><span  id="j-map-addr" class="white-bg"></span></div> <br>
+				<div ><div  class="dark-bg"><span id="j-map-contacts"></span><br>&emsp;<a href="#">info@hcube.ru</a>&emsp;</div></div>
+			</div>
+			<div class="map-col map-col_sm">
+				<form class="form form-map" action="#">
+
+					<div class="form-inner">
+						<div class="form-title">Обратный звонок</div>
+						<div class="form-row">
+							<input type="text" class="form-control j-name" name="userName" placeholder="Ваше имя" required="required">
+						</div>
+						<div class="form-row">
+							<input type="tel" class="form-control j-tel" name="userTel" placeholder="Телефон" required="required">
+						</div>
+					</div>
+					<button type="button" class="btn btn-orange j-submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+

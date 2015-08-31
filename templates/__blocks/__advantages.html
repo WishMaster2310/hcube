@@ -1,0 +1,13 @@
+<section class="advantages-section" id="advantages">
+	<div class="expand-container">
+		<div class="advantages">
+		{% for item in base.advantages %}
+			<figure class="wow  fadeIn">
+			    <p class="advantages-icon"><img src="{{ base.STATIC_URL }}img/advantages/{{ item.icon }}" alt="" /></p>
+			    <figcaption>{{ item.text|safe }}</figcaption>
+		   	</figure>
+		{% endfor %}
+		</div>
+		<div class="hr mb20"></div>
+	</div>
+</section><!-- /advantages -->

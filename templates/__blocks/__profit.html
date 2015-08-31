@@ -1,0 +1,15 @@
+<section id="profit">
+	<div class="container text-center">
+		<div class="hr mb45"></div>
+		<h2 class="h2 mb0">Выгоды</h2>
+		<p class="text-gray mb35">(позвоните прямо сейчас и вы получите)</p>
+		<div class="profits">
+			{% for item in base.profits %}
+			<figure class="profits-item wow flipInX"> 
+			    <p class="profits-icon"><img src="{{ base.STATIC_URL }}img/{{ item.img }}" alt="" /></p>
+			    <figcaption>{{ item.text|safe }}</figcaption>
+		   	</figure>
+			{% endfor %}
+		</div>
+	</div>
+</section><!-- /profit -->

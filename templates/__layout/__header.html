@@ -1,0 +1,44 @@
+<input type="checkbox" hidden name="menustate" id="menustate">
+<div class="stiky-menu">
+    <label class="stiky-menu-toggle" for="menustate"></label>
+    <div class="container">
+        <ul class="nav" id="nav">
+            <li>
+                <a href="#profit">Выгоды</a>
+            </li>
+            <li>
+                <a href="#projects">Проекты</a>
+            </li>
+            <li>
+                <a href="#clients">Клиенты</a>
+            </li>
+            <li>
+                <a href="#advantages">Преимущества</a>
+            </li>
+            <li>
+                <a href="#work">Схема работы</a>
+            </li>
+            <li>
+                <a href="#contacts">Контакты</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<header class="header">
+    <div class="expand-container">
+        <div class="header-row">
+            <div class="header-col header-col_left">
+                <div class="header-logo">
+                    <img src="{{ base.STATIC_URL }}img/logo.png" alt="{{ base.company }}">
+                </div>
+            </div>
+            <div class="header-col header-col_right">
+                <div class="header-phone">
+                    <p class="header-phone-helper">звоните прямо сейчас!</p>
+                    <p class="header-phone-number"><img src="{{ base.STATIC_URL }}img/phone.png" alt=""><span class="header-phone-colored">+7 495</span> 669-68-44</p>
+                    <p><a href="mailto: info@hcube.ru">info@hcube.ru</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

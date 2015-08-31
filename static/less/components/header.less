@@ -1,0 +1,178 @@
+.header {
+	padding-top: 30px;
+
+	&-row {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	&-col {
+		display: table-cell;
+		vertical-align: middle;
+		width: 50%;
+		padding: 20px 0;
+
+		&_right {
+			text-align: right;
+		}
+	}
+
+	&-phone {
+		&-helper {
+			font-size: 13px;
+			color: #a8a6a5;
+		}
+
+		&-number {
+			font-size: 1.5em;
+
+			img {
+				display: inline-block;
+				max-width: 100%;
+				vertical-align: top;
+				margin-right: 8px;
+				margin-top: .3em;
+			}
+		}
+
+		&-colored {
+			color: @orange;
+		}
+	}
+}
+
+.stiky-menu {
+	background-color: #ebeef0;
+	background-color: fade(#ebeef0, 90%);
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	.nav {
+		list-style-type: none;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		font-size: 11px;
+
+		> li {
+			display: inline-block;
+			vertical-align: top;
+			padding-left: 35px;
+			padding-right: 35px;
+			text-align: center;
+			text-transform: uppercase;
+			border-left: 1px solid #cfd4d7;
+		}
+
+		a {
+			color: #3b3230;
+			text-decoration: none;
+		}
+	}
+}
+@media screen and (min-width: 769px) and  (max-width: @tablet) {
+	.stiky-menu {
+		.nav {
+			li {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+}
+@media screen and (max-width: @tablet-min)  {
+
+	.stiky-menu {
+		display: none;
+	}
+
+	.header {
+	    padding-top: 0px;
+	}
+	/* .stiky-menu-toggle {
+		display: inline-block;
+		position: absolute;
+		left: -36px;
+		right: auto;
+		top: 0;
+		width: 36px;
+		height: 36px;
+		background: darken(#ebeef0, 5%);
+		.transition(all .3s ease-in-out);
+	
+	}
+	
+	.stiky-menu {
+		left: 100%;
+		width: 100%;
+		background-color: #ebeef0;
+		padding: 0;
+		right: auto;
+		.transition(all .3s ease-in-out);
+	
+	
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	
+	input:checked + .stiky-menu {
+		//background-color: #000;
+		
+		left: 0;
+	
+		.nav {
+			li {
+				display: block;
+				margin-left: 0;
+				margin-right: 0;
+				padding: 0;
+				width: 100%;
+	
+				a {
+					padding: 10px;
+					display: block;
+				}
+	
+				& + li {
+					border-top: 1px solid darken(#ebeef0, 10%);
+					.box-shadow(0px 1px 0px 0px #fff);
+				}
+			}
+		}
+	
+		.stiky-menu-toggle {
+			left: 100%;
+			margin-left: -36px;
+			//top: 100%;
+		}
+	} */
+}
+@media screen  and (max-width: @phone-md) {
+
+	.header {
+		padding-top: 0;
+	}
+
+	.header-col {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.header-row {
+		display: block;
+	}
+
+	.header-phone {
+		margin-bottom: 20px;
+	}
+}

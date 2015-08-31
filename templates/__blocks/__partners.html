@@ -1,0 +1,17 @@
+<section id="clients" class="mb45">
+	<div class="container text-center">
+		<div class="mb45 mt45 hr"></div>
+		<h2 class="h2-sm mb30">Нам доверяют крупнейшие компании</h2>
+	</div>
+	<div class="expand-container">
+		<div class="partners-wrapper">
+			<div class="partners" id="partnersSlider">
+			{% for partner in base.partners %}
+				<div class="partners-item">
+					<img src="{{ base.STATIC_URL }}img/partners/{{ partner.img }}" alt="">
+				</div>
+			{% endfor %}	
+			</div>
+		</div>
+	</div>
+</section><!-- /clients -->

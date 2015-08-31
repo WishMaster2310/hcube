@@ -1,0 +1,264 @@
+.works {
+	margin-left: -5%;
+	text-align: center;
+
+	&-section {
+		padding: 4.375em;
+		background: #dee3e8 url(../img/works.jpg) no-repeat center top;
+		.background-size(cover);
+
+		.expand-container {
+			max-width: 1100px;
+		}
+	}
+
+	&-arrow {
+		position: absolute;
+		border-bottom: 4px dotted @orange;
+		background-position: right 0;
+		height: 4px;
+		left: 100%;
+		width: 14%;
+		top: 50%;
+		margin-left: 5px;
+		margin-top: -2px;
+
+		&:after {
+			content: "";
+			width: 0;
+			height: 0;
+			display: block;
+			position: absolute;
+			border-left: 6px solid @orange;
+			border-right: 6px solid transparent;
+			border-top: 6px solid transparent;
+			border-bottom: 6px solid transparent;
+			right: -8px;
+			top: -4px;
+		}
+	}
+
+	
+
+	&-item {
+		width: 28.333%;
+		margin-left: 5%;
+		margin-right: -.25em;
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 55px;
+		position: relative;
+
+		&-inner {
+			background-color: #fff;
+			display: table;
+			width: 100%;
+			table-layout: fixed;
+			
+			.border-radius(5px);
+			.box-shadow(0px 2px 0px 1px fade(#000, 20%));
+		}
+
+		&-col {
+			display: table-cell;
+			vertical-align: middle;
+
+			&_img {
+				width: 73px;
+				text-align: center;
+			}
+
+			&_data {
+				//font-size: 18px;
+				text-align: left;
+				height: 82px;
+			}
+		}
+	}
+}
+.works-item_8 .works-arrow {
+	display: none !important;
+}
+@media screen and (min-width: @desktop-min) {
+	.works-item_4:after {
+		content: "";
+		width: 5px;
+		height: 16px;
+		left: 50%;
+		margin-left: -3px;
+		//background-image: url(../img/arr2.png);
+		background-position: right 0;
+		display: block;
+		top: -27px;
+		position: absolute;
+	}
+	.works-item_3 .works-arrow {
+		width: 236.5%;
+		height: 20px;
+		top: auto;
+		margin-top: 0;
+		bottom: -30px;
+		left: -187%;
+		border-right: 4px  dotted @orange;
+		border-bottom: 4px dotted @orange;
+		background-image: none;
+		margin-left: 0px;
+
+		&:before  {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 0;
+			height: 12px;
+			border-left: 4px dotted @orange;
+			bottom: -20px;
+
+		}
+
+
+		&:after {
+			border-top: 6px solid @orange;
+			border-bottom: 6px solid transparent;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			right: auto;
+			left: -4px;
+			top: 36px;
+		}
+	}
+
+	.works-item_6 .works-arrow {
+		width: 180%;
+		height: 20px;
+		top: auto;
+		margin-top: 0;
+		bottom: -29px;
+		left: -130%;
+		border-right: 4px  dotted @orange;
+		border-bottom: 4px dotted @orange;
+		background-image: none;
+		margin-left: 0px;
+
+		&:before  {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 0;
+			height: 12px;
+			border-left: 4px dotted @orange;
+			bottom: -20px;
+		}
+
+		&:after {
+			border-top: 6px solid @orange;
+			border-bottom: 6px solid transparent;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			right: auto;
+			left: -4px;
+			top: 36px;
+		}
+	}
+}
+
+
+@media screen 
+  and (min-width: @tablet-min) 
+  and (max-width: @tablet)  {
+	.works{
+		margin-left: -10%;
+		
+		&-item {
+			width: 40% !important;
+			margin-left: 10%;
+		}
+
+		&-section {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&-arrow {
+			width: 20%;
+		}
+	}
+
+	.works-item_2 .works-arrow,
+	.works-item_4 .works-arrow,
+	.works-item_6 .works-arrow {
+		width: 130%;
+		height: 20px;
+		top: auto;
+		margin-top: 0;
+		bottom: -29px;
+		left: -80%;
+		border-right: 4px  dotted @orange;
+		border-bottom: 4px dotted @orange;
+		background-image: none;
+		margin-left: 0px;
+
+		&:before  {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 0;
+			height: 12px;
+			border-left: 4px dotted @orange;
+			bottom: -20px;
+		}
+
+		&:after {
+			border-top: 6px solid @orange;
+			border-bottom: 6px solid transparent;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			right: auto;
+			left: -4px;
+			top: 36px;
+		}
+	}
+}
+
+@media screen and (max-width: @phone) {
+
+  	.works{
+		margin-left: 0;
+		
+		&-item {
+			width: 100% !important;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		&-section {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&-arrow {
+			width: 0px;
+			height: 40px;
+			border-right: 4px  dotted @orange;
+			position: absolute;
+			top: auto;
+			right: auto;
+			left: 50%;
+			bottom: -45px;
+			margin-left: -2px;
+
+			&:after {
+				border-top: 6px solid @orange;
+				border-bottom: 6px solid transparent;
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				right: auto;
+				left: -4px;
+				top: 36px;
+			}
+
+
+		}
+	}
+
+
+}

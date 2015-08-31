@@ -1,0 +1,66 @@
+.profits {
+	margin-left: -1%;
+	&-item {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 -.25em 20px 1%;
+		width: 32.333%;
+		font-weight: bold;
+
+
+		figcaption {
+			font-size: 1.125em;
+		}
+	}
+
+	&-icon {
+		position: relative;
+		height: 150px;
+		margin-bottom: 20px;
+
+		img {
+			position: absolute;
+			
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			max-height: 100%;
+			amax-width: 100%;
+		}
+	}
+}
+
+@media screen 
+  and (min-width: @tablet-min) 
+  and (max-width: @tablet)  {
+	.profits {
+		&-item {
+			width: 49%;
+		}
+
+	}
+}
+
+@media screen 
+  and (max-width: @phone)  {
+	.profits {
+		background-color: #f9f7f7;
+		margin-left: -10px;
+		margin-right: -10px;
+		padding-top: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+		&-item {
+			background-color: #fff;
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+			padding: 20px;
+			.box-shadow(0 8px 13px -8px #c5bfbf);
+			border: 1px solid #F5F0F0;
+			.border-radius(5px);
+		}
+	}
+}

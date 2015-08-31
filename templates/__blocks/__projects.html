@@ -1,0 +1,38 @@
+<section class="mb50" id="projects">
+	<div class="container text-center">
+		<h2 class="h2"><small>Мы реализовали и внедрили</small><br>более <span class="j-counter text-orange">200</span> <span class="text-orange">уникальных проектов</span></h2>
+	</div>
+	<div class="slider" id="projectSlider">
+		{% for item in base.projects %}
+		<div class="slider-item" style="background-image: url({{base.STATIC_URL}}img/projects/{{ item.bg }})">
+			<div class="container">
+				<div class="slider-row">
+					<div class="slider-col slider-col_img">
+						<div class="slider-imgs">
+							{% for img in item.imgs %}
+							<div class="slider-img slider-img_{{ loop.index }}">
+								<img class="slider-img-head" src="{{ base.STATIC_URL }}img/browser.jpg" alt="">
+								<img src="{{ base.STATIC_URL }}img/projects/{{ img }}" alt="">
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="slider-col slider-col_data">
+						<div class="slider-title">{{ item.name|safe }}</div>
+						<div class="slider-text">{{ item.info|safe }}</div>
+						<p class="mb35"><a href="#">{{ item.address }}</a></p>
+						<ul class="slider-tags mb30">
+						{% for tag in item.tags %}
+							<li>
+								<img src="{{ base.STATIC_URL }}img/projects/{{ tag.icon }}" alt="">{{ tag.name }}
+							</li>
+						{% endfor %}
+						</ul>
+						<p class="mb50"><a href="#">Подробнее о проекте </a></p>
+					</div>
+				</div>
+			</div>
+		</div>	
+		{% endfor %}
+	</div>
+</section><!-- /projects -->

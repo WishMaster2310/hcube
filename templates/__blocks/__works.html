@@ -1,0 +1,20 @@
+<section class="works-section mb45" id="work">
+	<div class="expand-container">
+		<div class="works">
+		<h2 class="h2 text-center mb40">Как мы работаем</h2>
+		{% for item in base.works %}
+			<div class="works-item works-item_{{ loop.index }} wow fadeInUp">
+				<div class="works-item-inner">
+					<div class="works-item-col works-item-col_img">
+						<img src="{{ base.STATIC_URL }}img/works/{{ item.icon }}" alt="">
+					</div>
+					<div class="works-item-col works-item-col_data">
+						{{ item.text|safe }}
+					</div>
+				</div>
+				<div class="works-arrow"></div>
+			</div>
+		{% endfor %}
+		</div>
+	</div>
+</section>
