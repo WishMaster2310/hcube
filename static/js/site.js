@@ -91,7 +91,7 @@ $(document).ready(function() {
 		var b = $(this).scrollTop();
 		var h = $(this).height();
 		if ( !isCounterPlayed && a <= (b + h) ) {
-			console.log(a, b, h);
+		
 
 			$(counter).prop('Counter',0).animate({
 	            Counter: $(counter).text()
