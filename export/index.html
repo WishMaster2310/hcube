@@ -7,8 +7,8 @@
     <meta name="description" content="Делаем сайты на базе 1С-Битрикс"> 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <link rel="shortcut icon" href="/static/img/favicon.ico">
-    <link rel="stylesheet"  href="/static/css/style.css">
+    <link rel="shortcut icon" href="./static/img/favicon.ico">
+    <link rel="stylesheet"  href="./static/css/style.css">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,cyrillic-ext" rel="stylesheet">
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
@@ -23,40 +23,52 @@
 <div class="stiky-menu">
     <label class="stiky-menu-toggle" for="menustate"></label>
     <div class="container">
-        <ul class="nav" id="nav">
-            <li>
-                <a href="#profit">Выгоды</a>
-            </li>
-            <li>
-                <a href="#projects">Проекты</a>
-            </li>
-            <li>
-                <a href="#clients">Клиенты</a>
-            </li>
-            <li>
-                <a href="#advantages">Преимущества</a>
-            </li>
-            <li>
-                <a href="#work">Схема работы</a>
-            </li>
-            <li>
-                <a href="#contacts">Контакты</a>
-            </li>
-        </ul>
+        <div class="stiky-row">
+            <div class="stiky-col stiky-col_l">
+                <a class="header-logo" href="http://hcube.ru/">
+                    <img src="./static/img/logo.png" alt="HCube">
+                </a>
+            </div>
+            <div class="stiky-col">
+                <ul class="nav" id="nav">
+                    <li>
+                        <a href="#profit">Выгоды</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="#clients">Клиенты</a>
+                    </li>
+                    <li>
+                        <a href="#advantages">Преимущества</a>
+                    </li>
+                    <li>
+                        <a href="#work">Схема работы</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="stiky-col stiky-col_r">
+                <p class="header-phone-number"><img src="./static/img/phone.png" alt=""><span class="header-phone-colored">+7 495</span> 669-68-44</p>
+            </div>
+        </div>
     </div>
 </div>
 <header class="header">
     <div class="expand-container">
         <div class="header-row">
             <div class="header-col header-col_left">
-                <div class="header-logo">
-                    <img src="/static/img/logo.png" alt="HCube">
-                </div>
+                <a class="header-logo" href="http://hcube.ru/">
+                    <img src="./static/img/logo.png" alt="HCube">
+                </a>
             </div>
             <div class="header-col header-col_right">
                 <div class="header-phone">
                     <p class="header-phone-helper">звоните прямо сейчас!</p>
-                    <p class="header-phone-number"><img src="/static/img/phone.png" alt=""><span class="header-phone-colored">+7 495</span> 669-68-44</p>
+                    <p class="header-phone-number"><img src="./static/img/phone.png" alt=""><span class="header-phone-colored">+7 495</span> 669-68-44</p>
                     <p><a href="mailto: info@hcube.ru">info@hcube.ru</a></p>
                 </div>
             </div>
@@ -95,27 +107,27 @@
 		<div class="advantages">
 		
 			<figure class="wow  fadeIn">
-			    <p class="advantages-icon"><img src="/static/img/advantages/calendar.png" alt="" /></p>
+			    <p class="advantages-icon"><img src="./static/img/advantages/calendar.png" alt="" /></p>
 			    <figcaption>С 2007 года на рынке</figcaption>
 		   	</figure>
 		
 			<figure class="wow  fadeIn">
-			    <p class="advantages-icon"><img src="/static/img/advantages/search.png" alt="" /></p>
+			    <p class="advantages-icon"><img src="./static/img/advantages/search.png" alt="" /></p>
 			    <figcaption>Уникальная экспертиза по реализации больших, сложных и&nbsp;нестандартных проектов</figcaption>
 		   	</figure>
 		
 			<figure class="wow  fadeIn">
-			    <p class="advantages-icon"><img src="/static/img/advantages/stack.png" alt="" /></p>
+			    <p class="advantages-icon"><img src="./static/img/advantages/stack.png" alt="" /></p>
 			    <figcaption>Более 200 выполненных проектов</figcaption>
 		   	</figure>
 		
 			<figure class="wow  fadeIn">
-			    <p class="advantages-icon"><img src="/static/img/advantages/megaphone.png" alt="" /></p>
+			    <p class="advantages-icon"><img src="./static/img/advantages/megaphone.png" alt="" /></p>
 			    <figcaption>83% клиентов делают у нас повторный заказ либо рекомендуют своим знакомым</figcaption>
 		   	</figure>
 		
 			<figure class="wow  fadeIn">
-			    <p class="advantages-icon"><img src="/static/img/advantages/bitrix.png" alt="" /></p>
+			    <p class="advantages-icon"><img src="./static/img/advantages/bitrix.png" alt="" /></p>
 			    <figcaption>Партнер 1С-Битрикс</figcaption>
 		   	</figure>
 		
@@ -129,25 +141,25 @@
 	</div>
 	<div class="slider" id="projectSlider">
 		
-		<div class="slider-item" style="background-image: url(/static/img/projects/project_1-bg.jpg)">
+		<div class="slider-item" style="background-image: url(./static/img/projects/project_1-bg.jpg)">
 			<div class="container">
 				<div class="slider-row">
 					<div class="slider-col slider-col_img">
 						<div class="slider-imgs">
 							
 							<div class="slider-img slider-img_1">
-								<img class="slider-img-head" src="/static/img/browser.jpg" alt="">
-								<img src="/static/img/projects/project_1_1.jpg" alt="">
+								<img class="slider-img-head" src="./static/img/browser.jpg" alt="">
+								<img src="./static/img/projects/project_1_1.jpg" alt="">
 							</div>
 							
 							<div class="slider-img slider-img_2">
-								<img class="slider-img-head" src="/static/img/browser.jpg" alt="">
-								<img src="/static/img/projects/project_1_2.jpg" alt="">
+								<img class="slider-img-head" src="./static/img/browser.jpg" alt="">
+								<img src="./static/img/projects/project_1_2.jpg" alt="">
 							</div>
 							
 							<div class="slider-img slider-img_3">
-								<img class="slider-img-head" src="/static/img/browser.jpg" alt="">
-								<img src="/static/img/projects/project_1_3.jpg" alt="">
+								<img class="slider-img-head" src="./static/img/browser.jpg" alt="">
+								<img src="./static/img/projects/project_1_3.jpg" alt="">
 							</div>
 							
 						</div>
@@ -159,47 +171,47 @@
 						<ul class="slider-tags mb30">
 						
 							<li>
-								<img src="/static/img/projects/cart.png" alt="">Интернет-магазин
+								<img src="./static/img/projects/cart.png" alt="">Интернет-магазин
 							</li>
 						
 							<li>
-								<img src="/static/img/projects/1s.png" alt="">Интеграция с 1С
+								<img src="./static/img/projects/1s.png" alt="">Интеграция с 1С
 							</li>
 						
 							<li>
-								<img src="/static/img/projects/responsive.png" alt="">Адаптивная верстка
+								<img src="./static/img/projects/responsive.png" alt="">Адаптивная верстка
 							</li>
 						
 							<li>
-								<img src="/static/img/projects/sales.png" alt="">Система персональных скидок
+								<img src="./static/img/projects/sales.png" alt="">Система персональных скидок
 							</li>
 						
 						</ul>
-						<p class="mb50"><a href="#">Подробнее о проекте </a></p>
+						<p class="mb50"><a href="http://hcube.ru/portfolio/4072/" class="j-fancyframe">Подробнее о проекте </a></p>
 					</div>
 				</div>
 			</div>
 		</div>	
 		
-		<div class="slider-item" style="background-image: url(/static/img/projects/project_2-bg.jpg)">
+		<div class="slider-item" style="background-image: url(./static/img/projects/project_2-bg.jpg)">
 			<div class="container">
 				<div class="slider-row">
 					<div class="slider-col slider-col_img">
 						<div class="slider-imgs">
 							
 							<div class="slider-img slider-img_1">
-								<img class="slider-img-head" src="/static/img/browser.jpg" alt="">
-								<img src="/static/img/projects/project_2_1.jpg" alt="">
+								<img class="slider-img-head" src="./static/img/browser.jpg" alt="">
+								<img src="./static/img/projects/project_2_1.jpg" alt="">
 							</div>
 							
 							<div class="slider-img slider-img_2">
-								<img class="slider-img-head" src="/static/img/browser.jpg" alt="">
-								<img src="/static/img/projects/project_2_2.jpg" alt="">
+								<img class="slider-img-head" src="./static/img/browser.jpg" alt="">
+								<img src="./static/img/projects/project_2_2.jpg" alt="">
 							</div>
 							
 							<div class="slider-img slider-img_3">
-								<img class="slider-img-head" src="/static/img/browser.jpg" alt="">
-								<img src="/static/img/projects/project_2_3.jpg" alt="">
+								<img class="slider-img-head" src="./static/img/browser.jpg" alt="">
+								<img src="./static/img/projects/project_2_3.jpg" alt="">
 							</div>
 							
 						</div>
@@ -211,23 +223,23 @@
 						<ul class="slider-tags mb30">
 						
 							<li>
-								<img src="/static/img/projects/cart.png" alt="">Интернет-магазин
+								<img src="./static/img/projects/cart.png" alt="">Интернет-магазин
 							</li>
 						
 							<li>
-								<img src="/static/img/projects/1s.png" alt="">Интеграция с 1С
+								<img src="./static/img/projects/1s.png" alt="">Интеграция с 1С
 							</li>
 						
 							<li>
-								<img src="/static/img/projects/responsive.png" alt="">Адаптивная верстка
+								<img src="./static/img/projects/responsive.png" alt="">Адаптивная верстка
 							</li>
 						
 							<li>
-								<img src="/static/img/projects/sales.png" alt="">Система персональных скидок
+								<img src="./static/img/projects/sales.png" alt="">Система персональных скидок
 							</li>
 						
 						</ul>
-						<p class="mb50"><a href="#">Подробнее о проекте </a></p>
+						<p class="mb50"><a href="http://hcube.ru/portfolio/4024/" class="j-fancyframe">Подробнее о проекте </a></p>
 					</div>
 				</div>
 			</div>
@@ -262,32 +274,32 @@
 		<div class="profits">
 			
 			<figure class="profits-item wow flipInX"> 
-			    <p class="profits-icon"><img src="/static/img/tie.jpg" alt="" /></p>
+			    <p class="profits-icon"><img src="./static/img/tie.jpg" alt="" /></p>
 			    <figcaption>Бесплатная экспертная<br /> консультация по вашему проекту</figcaption>
 		   	</figure>
 			
 			<figure class="profits-item wow flipInX"> 
-			    <p class="profits-icon"><img src="/static/img/money.jpg" alt="" /></p>
+			    <p class="profits-icon"><img src="./static/img/money.jpg" alt="" /></p>
 			    <figcaption>Лучшее соотношение <br />цена/качество</figcaption>
 		   	</figure>
 			
 			<figure class="profits-item wow flipInX"> 
-			    <p class="profits-icon"><img src="/static/img/plane.jpg" alt="" /></p>
+			    <p class="profits-icon"><img src="./static/img/plane.jpg" alt="" /></p>
 			    <figcaption>Быстрый старт <br />проекта</figcaption>
 		   	</figure>
 			
 			<figure class="profits-item wow flipInX"> 
-			    <p class="profits-icon"><img src="/static/img/chair.jpg" alt="" /></p>
+			    <p class="profits-icon"><img src="./static/img/chair.jpg" alt="" /></p>
 			    <figcaption>Обучение <br />(включено в стоимость)</figcaption>
 		   	</figure>
 			
 			<figure class="profits-item wow flipInX"> 
-			    <p class="profits-icon"><img src="/static/img/help.jpg" alt="" /></p>
+			    <p class="profits-icon"><img src="./static/img/help.jpg" alt="" /></p>
 			    <figcaption>Поддержка проекта <br />после запуска</figcaption>
 		   	</figure>
 			
 			<figure class="profits-item wow flipInX"> 
-			    <p class="profits-icon"><img src="/static/img/warranty.jpg" alt="" /></p>
+			    <p class="profits-icon"><img src="./static/img/warranty.jpg" alt="" /></p>
 			    <figcaption>Гарантия на <br />все работы</figcaption>
 		   	</figure>
 			
@@ -304,27 +316,27 @@
 			<div class="partners" id="partnersSlider">
 			
 				<div class="partners-item">
-					<img src="/static/img/partners/texet.jpg" alt="">
+					<img src="./static/img/partners/texet.jpg" alt="">
 				</div>
 			
 				<div class="partners-item">
-					<img src="/static/img/partners/rusinvest.jpg" alt="">
+					<img src="./static/img/partners/rusinvest.jpg" alt="">
 				</div>
 			
 				<div class="partners-item">
-					<img src="/static/img/partners/lexmark.jpg" alt="">
+					<img src="./static/img/partners/lexmark.jpg" alt="">
 				</div>
 			
 				<div class="partners-item">
-					<img src="/static/img/partners/smartlabs.jpg" alt="">
+					<img src="./static/img/partners/smartlabs.jpg" alt="">
 				</div>
 			
 				<div class="partners-item">
-					<img src="/static/img/partners/beuty.jpg" alt="">
+					<img src="./static/img/partners/beuty.jpg" alt="">
 				</div>
 			
 				<div class="partners-item">
-					<img src="/static/img/partners/polar.jpg" alt="">
+					<img src="./static/img/partners/polar.jpg" alt="">
 				</div>
 				
 			</div>
@@ -339,97 +351,121 @@
 			<div class="works-item works-item_1 wow fadeInUp">
 				<div class="works-item-inner">
 					<div class="works-item-col works-item-col_img">
-						<img src="/static/img/works/pred.jpg" alt="">
+						<img src="./static/img/works/pred.jpg" alt="">
 					</div>
 					<div class="works-item-col works-item-col_data">
 						Предварительный анализ данных
 					</div>
 				</div>
 				<div class="works-arrow"></div>
+				<div class="works-tip">
+					1Мы анализируем всю имеющуюся информацию, далее полномтью проектируем  всю структуру и внешний вид будущего проекта.
+				</div>
 			</div>
 		
 			<div class="works-item works-item_2 wow fadeInUp">
 				<div class="works-item-inner">
 					<div class="works-item-col works-item-col_img">
-						<img src="/static/img/works/doc.jpg" alt="">
+						<img src="./static/img/works/doc.jpg" alt="">
 					</div>
 					<div class="works-item-col works-item-col_data">
 						Заключение <br />договора
 					</div>
 				</div>
 				<div class="works-arrow"></div>
+				<div class="works-tip">
+					2Мы анализируем всю имеющуюся информацию, далее полномтью проектируем
+				</div>
 			</div>
 		
 			<div class="works-item works-item_3 wow fadeInUp">
 				<div class="works-item-inner">
 					<div class="works-item-col works-item-col_img">
-						<img src="/static/img/works/analiz.jpg" alt="">
+						<img src="./static/img/works/analiz.jpg" alt="">
 					</div>
 					<div class="works-item-col works-item-col_data">
 						Анализ информации и&nbsp;проектирование
 					</div>
 				</div>
 				<div class="works-arrow"></div>
+				<div class="works-tip">
+					3Мы анализируем всю имеющуюся информацию, далее полномтью проектируем  всю структуру и внешний вид будущего проекта.
+				</div>
 			</div>
 		
 			<div class="works-item works-item_4 wow fadeInUp">
 				<div class="works-item-inner">
 					<div class="works-item-col works-item-col_img">
-						<img src="/static/img/works/design.jpg" alt="">
+						<img src="./static/img/works/design.jpg" alt="">
 					</div>
 					<div class="works-item-col works-item-col_data">
 						Дизайн макетов
 					</div>
 				</div>
 				<div class="works-arrow"></div>
+				<div class="works-tip">
+					4Мы анализируем всю имеющуюся информацию, далее полномтью проектируем  всю структуру и внешний вид будущего проекта.
+				</div>
 			</div>
 		
 			<div class="works-item works-item_5 wow fadeInUp">
 				<div class="works-item-inner">
 					<div class="works-item-col works-item-col_img">
-						<img src="/static/img/works/makeup.jpg" alt="">
+						<img src="./static/img/works/makeup.jpg" alt="">
 					</div>
 					<div class="works-item-col works-item-col_data">
 						Верстка
 					</div>
 				</div>
 				<div class="works-arrow"></div>
+				<div class="works-tip">
+					5Мы анализируем всю имеющуюся информацию, далее полномтью проектируем  всю структуру и внешний вид будущего проекта.
+				</div>
 			</div>
 		
 			<div class="works-item works-item_6 wow fadeInUp">
 				<div class="works-item-inner">
 					<div class="works-item-col works-item-col_img">
-						<img src="/static/img/works/code.jpg" alt="">
+						<img src="./static/img/works/code.jpg" alt="">
 					</div>
 					<div class="works-item-col works-item-col_data">
 						Программирование
 					</div>
 				</div>
 				<div class="works-arrow"></div>
+				<div class="works-tip">
+					6Мы анализируем всю имеющуюся информацию, далее полномтью проектируем  всю структуру и внешний вид будущего проекта.
+				</div>
 			</div>
 		
 			<div class="works-item works-item_7 wow fadeInUp">
 				<div class="works-item-inner">
 					<div class="works-item-col works-item-col_img">
-						<img src="/static/img/works/test.jpg" alt="">
+						<img src="./static/img/works/test.jpg" alt="">
 					</div>
 					<div class="works-item-col works-item-col_data">
 						Тестирование и&nbsp;внедрение
 					</div>
 				</div>
 				<div class="works-arrow"></div>
+				<div class="works-tip">
+					7Мы анализируем всю имеющуюся информацию, далее полномтью проектируем  всю структуру и внешний вид будущего проекта.
+				</div>
 			</div>
 		
 			<div class="works-item works-item_8 wow fadeInUp">
 				<div class="works-item-inner">
 					<div class="works-item-col works-item-col_img">
-						<img src="/static/img/works/sopr.jpg" alt="">
+						<img src="./static/img/works/sopr.jpg" alt="">
 					</div>
 					<div class="works-item-col works-item-col_data">
 						Дальнейшая эксплуатация и&nbsp;поддержка проекта
 					</div>
 				</div>
 				<div class="works-arrow"></div>
+				<div class="works-tip">
+					8Мы анализируем всю имеющуюся информацию, далее полномтью проектируем  всю структуру и внешний вид будущего проекта.
+				</div>
 			</div>
 		
 		</div>
@@ -496,10 +532,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/static/js/owl.carousel.min.js"></script>
-    <script src="/static/js/wow.min.js"></script>
-    <script src="/static/js/jquery.maskedinput.min.js"></script>
-    <script src="/static/js/site.js"></script>
+    <script src="./static/js/owl.carousel.min.js"></script>
+    <script src="./static/js/wow.min.js"></script>
+    <script src="./static/js/jquery.maskedinput.min.js"></script>
+    <script src="./static/js/jquery.fancybox.pack.js"></script>
+    <script src="./static/js/site.js"></script>
                                                                                                                   
 </body>
 </html>

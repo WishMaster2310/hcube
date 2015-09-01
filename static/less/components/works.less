@@ -75,6 +75,40 @@
 			}
 		}
 	}
+
+	&-tip {
+		position: absolute;
+		display: none;
+		bottom: 100%;
+		width: 250px;
+		padding: 10px;
+		.border-radius(5px);
+		background-color: @orange;
+		color: #fff;
+		font-size: 13px;
+		.animated();
+		left: 50%;
+		margin-left: -125px;
+		margin-bottom: 20px;
+		text-align: left;
+
+		&:after  {
+			display: block;
+			content: "";
+			border-top: 10px solid @orange;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			position: absolute;
+			top: 100%;
+			left: 10%;
+		}
+	}
+
+	&-item:hover &-tip  {
+		display: block;
+		.fadeInUp()
+	}
 }
 .works-item_8 .works-arrow {
 	display: none !important;
